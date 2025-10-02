@@ -1,59 +1,44 @@
-# MongoDB Fundamentals - Week 1
+PLP Bookstore (MongoDB Assignment)
 
-## Setup Instructions
+This project is about a simple bookstore database.
 
-Before you begin this assignment, please make sure you have the following installed:
+HOW TO RUN:
+1. START MONGODB
 
-1. **MongoDB Community Edition** - [Installation Guide](https://www.mongodb.com/docs/manual/administration/install-community/)
-2. **MongoDB Shell (mongosh)** - This is included with MongoDB Community Edition
-3. **Node.js** - [Download here](https://nodejs.org/)
+If you installed MongoDB on your computer → just make sure it’s running.
 
-### Node.js Package Setup
+Default link: mongodb://localhost:27017
 
-Once you have Node.js installed, run the following commands in your assignment directory:
 
-```bash
-# Initialize a package.json file
-npm init -y
+2. ADD BOOKS TO THE DATABASE
 
-# Install the MongoDB Node.js driver
-npm install mongodb
-```
+Open a terminal in this folder.
 
-## Assignment Overview
+Run:
 
-This week focuses on MongoDB fundamentals including:
-- Creating and connecting to MongoDB databases
-- CRUD operations (Create, Read, Update, Delete)
-- MongoDB queries and filters
-- Aggregation pipelines
-- Indexing for performance
+node insert.js
 
-## Submission
+This will put sample books inside a database called plp_bookstore.
 
-Complete all the exercises in this assignment and push your code to GitHub using the provided GitHub Classroom link.
 
-## Getting Started
+3. PLAY WITH QUERIES
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
+Open MongoDB Shell (type mongosh in terminal).
 
-## Files Included
+Use the database:
 
-- `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
+use plp_bookstore
 
-## Requirements
+Copy queries from queries.js and paste them into the shell one by one.
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- MongoDB Shell (mongosh) or MongoDB Compass
+You’ll see results right away.
 
-## Resources
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [MongoDB University](https://university.mongodb.com/)
-- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+WHAT'S INSIDE
+
+1. insert.js → puts books into the database.
+
+2. queries.js → has all the MongoDB queries (CRUD, advanced, aggregation, indexing).
+
+
+
